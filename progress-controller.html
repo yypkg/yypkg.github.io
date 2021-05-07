@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>ProgressController | YYPKG</title>
+    <meta name="generator" content="VuePress 1.4.1">
+    
+    <meta name="description" content="YYPKG使用文档">
+    <link rel="preload" href="/assets/css/0.styles.fc0947df.css" as="style"><link rel="preload" href="/assets/js/app.78854bac.js" as="script"><link rel="preload" href="/assets/js/2.452c1bf5.js" as="script"><link rel="preload" href="/assets/js/12.92991cf0.js" as="script"><link rel="prefetch" href="/assets/js/10.b8105ee9.js"><link rel="prefetch" href="/assets/js/11.7d041884.js"><link rel="prefetch" href="/assets/js/13.35cbe59a.js"><link rel="prefetch" href="/assets/js/14.7a8d8d21.js"><link rel="prefetch" href="/assets/js/3.0e850fc2.js"><link rel="prefetch" href="/assets/js/4.59a7305c.js"><link rel="prefetch" href="/assets/js/5.aa2536e3.js"><link rel="prefetch" href="/assets/js/6.5eb6d0dd.js"><link rel="prefetch" href="/assets/js/7.edeb660a.js"><link rel="prefetch" href="/assets/js/8.7f67967f.js"><link rel="prefetch" href="/assets/js/9.a5c7e94f.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.fc0947df.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">YYPKG</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  快速使用
+</a></div><div class="nav-item"><a href="/doc/" class="nav-link">
+  API文档
+</a></div><div class="nav-item"><a href="/CHANGELOG/" class="nav-link">
+  更新日志
+</a></div><div class="nav-item"><a href="/develop/" class="nav-link">
+  加入开发
+</a></div><div class="nav-item"><a href="https://github.com/yypkg/yypkg" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://www.npmjs.com/package/yypkg" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  npm
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  快速使用
+</a></div><div class="nav-item"><a href="/doc/" class="nav-link">
+  API文档
+</a></div><div class="nav-item"><a href="/CHANGELOG/" class="nav-link">
+  更新日志
+</a></div><div class="nav-item"><a href="/develop/" class="nav-link">
+  加入开发
+</a></div><div class="nav-item"><a href="https://github.com/yypkg/yypkg" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://www.npmjs.com/package/yypkg" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  npm
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>ProgressController</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/progress-controller.html#使用" class="sidebar-link">使用</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/progress-controller.html#配置项" class="sidebar-link">配置项</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/progress-controller.html#方法" class="sidebar-link">方法</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/progress-controller.html#事件" class="sidebar-link">事件</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="progresscontroller"><a href="#progresscontroller" class="header-anchor">#</a> ProgressController</h1> <p>进度控制器，更灵活可控的进度百分比控制，模拟逼真的web资源加载进度</p> <h2 id="使用"><a href="#使用" class="header-anchor">#</a> 使用</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> ProgressController <span class="token keyword">from</span> <span class="token string">'yypkg/progress-controller'</span>
+
+<span class="token comment">// 初始配置</span>
+<span class="token keyword">let</span> config <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token keyword">from</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+  to<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
+  increment<span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+  rate<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">let</span> stepOption <span class="token operator">=</span> <span class="token punctuation">{</span>
+  step1<span class="token operator">:</span> <span class="token punctuation">{</span>
+    progress<span class="token operator">:</span> <span class="token number">85</span><span class="token punctuation">,</span>
+    rate<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">100</span><span class="token punctuation">,</span> <span class="token number">120</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token comment">// 在100-120ms之间随机更新频率</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  step2<span class="token operator">:</span> <span class="token punctuation">{</span>
+    progress<span class="token operator">:</span> <span class="token number">92</span><span class="token punctuation">,</span>
+    rate<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">800</span><span class="token punctuation">,</span> <span class="token number">1200</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">let</span> progress <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ProgressController</span><span class="token punctuation">(</span>config<span class="token punctuation">)</span>
+
+<span class="token comment">// 进度阶段1</span>
+progress<span class="token punctuation">.</span><span class="token function">go</span><span class="token punctuation">(</span>stepOption<span class="token punctuation">.</span>step1<span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+
+  <span class="token comment">// 进度阶段2</span>
+  progress<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>stepOption<span class="token punctuation">.</span>step2<span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token comment">// 设置进度到100%</span>
+progress<span class="token punctuation">.</span><span class="token function">complete</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'加载完毕'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token comment">// 进度加载事件</span>
+progress<span class="token punctuation">.</span><span class="token function">$on</span><span class="token punctuation">(</span><span class="token string">'process'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">currentProgress</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">当前进度是</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>currentProgress<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+</code></pre></div><h2 id="配置项"><a href="#配置项" class="header-anchor">#</a> 配置项</h2> <table><thead><tr><th>参数名</th> <th>描述</th> <th>类型</th> <th>默认值</th></tr></thead> <tbody><tr><td><code>from</code></td> <td>设置进度起始位置</td> <td>Number 或 Array，数组时表示区间内随机某个值</td> <td>0</td></tr> <tr><td><code>to</code></td> <td>设置进度结束位置</td> <td>Number 或 Array，数组时表示区间内随机某个值</td> <td>100</td></tr> <tr><td><code>increment</code></td> <td>每次更新的递增量</td> <td>Number 或 Array，数组时表示区间内随机某个值</td> <td>1</td></tr> <tr><td><code>rate</code></td> <td>更新频率，即多久更新一次，单位ms</td> <td>Number 或 Array，数组时表示区间内随机某个值</td> <td>100</td></tr></tbody></table> <h2 id="方法"><a href="#方法" class="header-anchor">#</a> 方法</h2> <table><thead><tr><th>方法名</th> <th>描述</th> <th>参数</th></tr></thead> <tbody><tr><td><code>go</code></td> <td>设置进度去到某个值</td> <td><code>option</code>:Object <br> <code>option.progress</code>: 进度值，Number 或 Array  <br> <code>option.increment</code>: 递增量，Number 或 Array  <br> <code>option.rate</code>: 频率，Number 或 Array  <br> <code>callback</code>: 回调函数，返回当前进度值</td></tr> <tr><td><code>add</code></td> <td>在当前时刻基础上增加进度去到某个值</td> <td><code>option</code>:Object <br> <code>option.progress</code>: 进度值，Number 或 Array  <br> <code>option.increment</code>: 递增量，Number 或 Array  <br> <code>option.rate</code>: 频率，Number 或 Array  <br> <code>callback</code>: 回调函数，返回当前进度值</td></tr> <tr><td><code>complete</code></td> <td>设置进去去到100%，也可用<code>go</code>或<code>add</code>实现</td> <td><code>callback</code>: 回调函数，返回当前进度值</td></tr> <tr><td><code>reset</code></td> <td>重置进度</td> <td><code>callback</code>: 回调函数，返回当前进度值</td></tr> <tr><td><code>destroy</code></td> <td>销毁进度对象</td> <td><code>callback</code>: 回调函数</td></tr> <tr><td><code>$on</code></td> <td>事件监听方法</td> <td><code>eventName</code>: 事件名称，String，见下表 <br> <code>callback</code>: 回调函数</td></tr></tbody></table> <h2 id="事件"><a href="#事件" class="header-anchor">#</a> 事件</h2> <p>事件用<code>$on</code>方法调用，<code>callback</code>回调函数返回当前进度值</p> <table><thead><tr><th>事件名</th> <th>描述</th> <th>回调函数参数</th></tr></thead> <tbody><tr><td>process</td> <td>进度进行过程中</td> <td><code>currentProgress</code>：当前进度值</td></tr> <tr><td>complete</td> <td>进度完成到100%</td> <td><code>currentProgress</code>：当前进度值</td></tr> <tr><td>beforeDestroy</td> <td>销毁之前</td> <td><code>currentProgress</code>：当前进度值</td></tr> <tr><td>destroyed</td> <td>销毁之后</td> <td>无</td></tr></tbody></table></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.78854bac.js" defer></script><script src="/assets/js/2.452c1bf5.js" defer></script><script src="/assets/js/12.92991cf0.js" defer></script>
+  </body>
+</html>
